@@ -41,7 +41,6 @@ public class UrlController {
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(URI.create(longUrl));
         return new ResponseEntity<>(headers, HttpStatus.FOUND);
-
     }
 }
 
